@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
       <section className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-gray-100 mb-16">
-            How PlasticWise Helps You Recycle
+            How EcoSort Helps You Recycle
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -121,7 +121,7 @@ const HomePage: React.FC = () => {
             Ready to Make a Difference?
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Join thousands of users who are making smarter recycling decisions with PlasticWise. 
+            Join thousands of users who are making smarter recycling decisions with EcoSort. 
             Every plastic item correctly recycled helps reduce environmental impact.
           </p>
           <Link
