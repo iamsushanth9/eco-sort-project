@@ -7,51 +7,59 @@ const HomePage: React.FC = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2547565/pexels-photo-2547565.jpeg')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-500/30 to-blue-500/30 backdrop-blur-sm"></div>
+      <section className="relative bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-24 md:py-40 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2547565/pexels-photo-2547565.jpeg')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-800/60 to-slate-900/80"></div>
         
-        <div className="container mx-auto px-4 relative">
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="md:w-1/2 animate-slideInLeft">
-              <div className="relative">
-                <div className="absolute -top-10 -left-10 w-20 h-20 bg-white/10 rounded-full animate-float" style={{ animationDelay: '0.5s' }}></div>
-                <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-white/10 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-                
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                  Recycle Smarter with AI-Powered Plastic Identification
-                </h1>
-                <p className="text-xl mb-8 text-green-50 leading-relaxed">
-                  Upload a photo of any plastic item and instantly learn if it's recyclable and how to dispose of it properly.
-                </p>
-                <Link
-                  to="/upload"
-                  className="group inline-flex items-center px-8 py-4 bg-white text-green-600 rounded-full font-medium hover:bg-green-50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
-                >
-                  <Upload size={22} className="mr-2 transition-transform group-hover:rotate-12" />
-                  Upload Your Plastic
-                  <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+            {/* Tagline */}
+            <div className="mb-6 inline-block">
+              <span className="text-green-400 font-semibold text-sm tracking-widest uppercase">Join 50,000+ eco-warriors</span>
             </div>
             
-            <div className="md:w-1/2 animate-slideInRight">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-2xl animate-pulse-slow"></div>
-                <div className="glass-effect rounded-2xl p-1 transform hover:scale-[1.02] transition-all duration-500 group">
-                  <div className="relative overflow-hidden rounded-xl">
-                    <img
-                      src="https://images.pexels.com/photos/6963622/pexels-photo-6963622.jpeg"
-                      alt="Sustainable recycling concept"
-                      className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      style={{ height: '500px' }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-green-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                  <div className="absolute -bottom-6 -right-6 bg-white/90 dark:bg-gray-900/90 p-4 rounded-full shadow-lg transform rotate-12 animate-float">
-                    <Recycle className="w-8 h-8 text-green-500" />
-                  </div>
-                </div>
+            {/* Main Heading */}
+            <h1 className="text-5xl md:text-7xl font-bold mb-2 leading-tight">
+              <span className="text-white">Transform Plastic</span>
+            </h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+              <span className="text-green-400">IntoTomorrow</span>
+            </h1>
+            
+            {/* Description */}
+            <p className="text-lg md:text-xl mb-10 text-gray-300 leading-relaxed max-w-2xl">
+              Every piece of plastic you sort creates ripples of change. Join our mission to revolutionize waste management and build a sustainable future for generations to come.
+            </p>
+            
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+              <Link
+                to="/upload"
+                className="group inline-flex items-center px-8 py-4 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+              >
+                Upload Your Plastic
+                <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
+              </Link>
+              
+            </div>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full pt-8 border-t border-white/10">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">2.5M</div>
+                <div className="text-sm text-gray-400">Kg Plastic Recycled</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">180+</div>
+                <div className="text-sm text-gray-400">Countries Reached</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">50K</div>
+                <div className="text-sm text-gray-400">Active Sorters</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">98%</div>
+                <div className="text-sm text-gray-400">Recycling Rate</div>
               </div>
             </div>
           </div>
