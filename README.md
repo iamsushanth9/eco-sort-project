@@ -3,7 +3,7 @@
 <img width="468" alt="ps3" src="https://github.com/user-attachments/assets/5555643d-ee45-4375-a670-d2b7cf916298" />
 
 🌐 **Live Demo**: [Live](https://plastwise.netlify.app/)  
-📦 **Source Code**: [GitHub Repository](https://github.com/swethaganeshh/PlasticWise)
+📦 **Source Code**: [GitHub Repository](https://github.com/swethaganeshh/EcoSort)
 
 ---
 
@@ -93,7 +93,7 @@ It uses **Firebase** for image storage and user tracking.
 
 Have ideas or want to collaborate?
 
-- Submit issues or PRs on [GitHub](https://github.com/swethaganeshh/PlasticWise)
+- Submit issues or PRs on [GitHub](https://github.com/swethaganeshh/EcoSort)
 - Connect on [LinkedIn](https://www.linkedin.com/in/swethaganesh07)
 
 ---
