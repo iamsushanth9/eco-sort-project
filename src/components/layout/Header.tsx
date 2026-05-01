@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           className="flex items-center space-x-2 text-green-600 dark:text-green-400 transition-colors duration-200"
         >
           <Recycle size={32} />
-          <span className="text-xl font-bold">PlasticWise</span>
+          <span className="text-xl font-bold">EcoSort</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <Recycle size={24} className="text-green-600 dark:text-green-400" />
-              <span className="ml-2 text-lg font-bold">PlasticWise</span>
+              <span className="ml-2 text-lg font-bold">EcoSort</span>
             </div>
             <p className="text-sm mb-4">
               Helping you make smarter decisions about plastic recycling through AI-powered identification and education.
@@ -57,10 +57,10 @@ const Footer: React.FC = () => {
               <li className="flex items-center">
                 <Mail size={16} className="mr-2 text-green-600 dark:text-green-400" />
                 <a 
-                  href="mailto:contact@plasticwise.example.com" 
+                  href="mailto:contact@ecosort.example.com" 
                   className="hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
                 >
-                  contact@plasticwise.example.com
+                  contact@ecosort.example.com
                 </a>
               </li>
               <li className="flex items-center">
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-200 dark:border-gray-800 mt-8 pt-6 text-sm text-center">
-          <p>© {new Date().getFullYear()} PlasticWise. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} EcoSort. All rights reserved.</p>
           <p className="mt-2 text-xs">
             This is a demo project. In a real application, AI image classification would be connected to a proper backend.
           </p>
