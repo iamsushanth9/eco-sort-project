@@ -34,7 +34,7 @@ const LoginPage: React.FC = () => {
         <div className="w-full max-w-md bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8 glass-effect animate-fadeIn">
           <div className="flex flex-col items-center mb-6">
             <LogIn className="h-10 w-10 text-green-600 dark:text-green-400 mb-2" />
-            <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Login to PlasticWise</h1>
+            <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Login to EcoSort</h1>
             <p className="text-gray-500 dark:text-gray-400 text-center mt-2">Welcome back! Please enter your credentials.</p>
           </div>
           <form onSubmit={handleSubmit} className="space-y-6">
