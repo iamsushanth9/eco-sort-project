@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret';
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/plasticwise';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/ecosort';
 
 // Middleware
 app.use(cors());
