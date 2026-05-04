@@ -19,7 +19,11 @@ const PlasticGuide: React.FC = () => {
         {plasticEducation.map((plastic) => (
           <div 
             key={plastic.type} 
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-200"
+            className={`rounded-xl overflow-hidden transition-all duration-300 border ${
+              expandedType === plastic.type 
+                ? 'bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-green-200 dark:border-green-800 shadow-md' 
+                : 'bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md'
+            }`}
           >
             <div 
               className="p-4 cursor-pointer flex justify-between items-center"
@@ -48,14 +52,16 @@ const PlasticGuide: React.FC = () => {
                     <h4 className="font-medium text-gray-700 dark:text-gray-300 mt-4 mb-2">
                       Common Items
                     </h4>
-                    <ul className="text-sm text-gray-600 dark:text-gray-400">
+                    <div className="flex flex-wrap gap-2 mt-1">
                       {plastic.commonItems.map((item, index) => (
-                        <li key={index} className="flex items-start mb-1">
-                          <span className="mr-2">•</span>
-                          <span>{item}</span>
-                        </li>
+                        <span 
+                          key={index} 
+                          className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-200 shadow-sm border border-emerald-200 dark:border-emerald-800"
+                        >
+                          {item}
+                        </span>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                   
                   <div>
